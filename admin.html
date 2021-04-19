@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Login</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+<style>
+h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+.demo-card {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 100px;
+}
+h4.title {
+  text-align: center;
+}
+.demo-card {
+    opacity: 0.9;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+</style>
+</head>
+
+<body style="background-image:url(10.jpg); background-size:cover;">
+	<!--Navigation Bar-->
+	<nav class="navbar navbar-dark bg-primary">
+	  <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+		<div class="collapse navbar-toggleable-md" id="navbarResponsive">
+		<a class="navbar-brand" href="#">Floral Destination</a>
+		<ul class="nav navbar-nav float-lg-right">
+		  <li class="nav-item active">
+			<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+		  </li>
+		</ul>
+		</div>
+	</nav>
+	<!--End of Navigation Bar-->
+	<br><br><br>
+	<div class="demo-card">
+		<div class="card ">
+			<div class="card-header card-inverse card-success text-center">
+				Admin Login
+			</div>
+			
+			<div class="card-block">
+				<form method="POST" action="adminlogin.php">
+				  <div class="form-group">
+					<label for="exampleInputEmail1">Email address</label>
+					<input type="name" name="uname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="required" placeholder="Enter Username">
+					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+				  </div>
+				  <div class="form-group">
+					<label for="exampleInputPassword1">Password</label>
+					<input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required="required">
+				  </div>
+				  
+				  <!--<div class="form-group">
+					<label for="exampleSelect1">Example select</label>
+					<select class="form-control" id="exampleSelect1">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					</select>
+				  </div>-->
+				  <button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	
+
+</body>
+</html>

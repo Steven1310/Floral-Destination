@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>Buy Flowers</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+
+    
+  </head>
+
+  <body style="background-image: url(img/11.jpg); background-size:cover;">
+
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+
+	  <div id="login-page">
+	  	<div class="container">
+	  	
+		      <form class="form-login" action="book.php" method="POST">
+		        <h2 class="form-login-heading">Book</h2>
+		        <div class="login-wrap">
+					
+					<br>
+					<label for="sel1">Name</label>
+		            <input type="text" class="form-control" name="name" required placeholder="Name" autofocus>
+		            <br>
+					<label for="sel1">Quantity</label>
+		            <input type="text" class="form-control" name="quantity" required placeholder="Quantity">
+		            <br>
+					<label for="sel1">Date of Delivery</label>
+					<input type="date" class="form-control" name="dod" required placeholder="Date of Delivery">
+		            <br>
+					<label for="sel1">Contact Number</label>
+		            <input type="text" class="form-control" name="contact" required placeholder="Contact Number" autofocus>
+					<br>
+					<label for="sel1">Address</label>
+		            <textarea type="text" class="form-control" name="address" required placeholder="Address" autofocus></textarea>
+					<br>
+					<div class="form-group">
+					  <label for="sel1">Select Flowers:</label>
+					  <select class="form-control" id="sel1" name="flower">
+						<option value="Lilly">Lilly</option>
+						<option value="Red Rose">Red Rose</option>
+						<option value="Pink Rose">Rink Rose</option>
+						<option value="Lotus">Lotus</option>
+						<option value="White Rose">White Rose</option>
+						<option value="Tulip">Tulip</option>
+						<option value="Shoe">Shoe</option>
+						<option value="Marigold">Marigold</option>
+						<option value="Vibrant Marigold">Vibrant Marigold</option>
+					  </select>
+					</div>
+					<button class="btn btn-theme btn-block" type="submit"><i class="fa fa-lock"></i> Book</button>
+		            <hr>
+		            <input type="label" name="xyz" visibility="true" hidden="true">
+		        </div>
+		
+		          
+					
+		      </form>	  	
+				
+	  	</div>
+	  </div>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--BACKSTRETCH-->
+    <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+    <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
+    <script>
+        $.backstretch("assets/img/login-bg.jpg", {speed: 500});
+    </script>
+
+
+  </body>
+</html>
