@@ -44,7 +44,7 @@ INSERT INTO `admin` (`uname`, `passwd`) VALUES
 -- Table structure for table `flower`
 --
 
-CREATE TABLE IF NOT EXISTS `flower` (
+CREATE TABLE IF NOT EXISTS `details` (
   `name` varchar(50) NOT NULL,
   `quantity` varchar(100) NOT NULL,
   `dod` varchar(50) NOT NULL,
@@ -60,10 +60,11 @@ CREATE TABLE IF NOT EXISTS `flower` (
 -- Dumping data for table `flower`
 --
 
-INSERT INTO `flower` (`name`, `quantity`, `dod`, `contact`, `address`, `flower`, `cost`, `orderno`, `status`) VALUES
-('Sanil Rodrigues', '3', '2016-11-30', '07507847096', 'Oasis House\r\nGass', 'Flower3', 750, 7824, ''),
-('Sahil', '4', '2016-11-30', '07507847096', 'Oasis House\r\nGass', 'Flower2', 800, 9660, ''),
-('Sahil Lopes', '5', '2016-10-31', '07507847096', 'Oasis House\r\nGass', 'Flower2', 1000, 1243, '');
+INSERT INTO `details` (`name`, `quantity`, `dod`, `contact`, `address`, `flower`, `cost`, `orderno`, `status`) VALUES
+('Steven P', '3', '2016-11-30', '0987654321', 'Oasis House\r\nIndia', 'Lilly', 750, 7824, ''),
+('Sahil L', '4', '2016-11-30', '1234567890', 'Oasis House\r\nIndia', 'Marigold', 800, 9660, ''),
+('Jasmine L', '5', '2016-10-31', '4321098765', 'Oasis House\r\nIndia', 'Red Rose', 1000, 1243, ''),
+('Rebecca D', '3', '2016-10-31', '6789012345', 'Oasis House\r\nIndia', 'Pink Rose', 750, 1123, '');
 
 -- --------------------------------------------------------
 
@@ -85,8 +86,10 @@ CREATE TABLE IF NOT EXISTS `login` (
 --
 
 INSERT INTO `login` (`uname`, `passwd`, `email`, `contact`, `code`) VALUES
-('Sahil', 'sahil', 'sahillopes@gmail.com', '9665310136', 1),
-('Jasmine', 'jasmine', 'jasminelobo@gmail.com', '7507847096', 6);
+('Steven', 'steven', 'stevenp@gmail.com', '0987654321', 0),
+('Sahil', 'sahil', 'sahill@gmail.com', '1234567890', 1),
+('Jasmine', 'jasmine', 'jasminel@gmail.com', '4321098765', 2),
+('Rebecca', 'rebecca', 'rebeccad@gmail.com', '6789012345', 3);
 
 -- --------------------------------------------------------
 
@@ -104,9 +107,15 @@ CREATE TABLE IF NOT EXISTS `product` (
 --
 
 INSERT INTO `product` (`flowername`, `price`) VALUES
-('flower1', 250),
-('flower2', 200),
-('flower3', 250);
+('Lilly', 250),
+('Red Rose', 200),
+('Lotus', 300),
+('White Rose', 225),
+('Tulip', 500),
+('Shoe', 100),
+('Marigold', 200),
+('Vibrant Marigold', 300),
+('Pink Rose', 250);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

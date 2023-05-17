@@ -3,13 +3,9 @@
 	
 	$uname=$_POST["username"];
 	$password=$_POST["password"];
-	$result=mysqli_query($conn,"SELECT * FROM login" );
-	while($row=mysqli_fetch_array($result))
-	{
-		$passwd = $row["passwd"];
-		
-	}
-	if( $password == $passwd )
+	$result=mysqli_query($conn,"SELECT count(*) FROM login WHERE uname='$uname' and passwd='$password'" );
+	$value = $result->fetch_row()[0] ?? 0;
+	if( $value > 0 )
 	{
 		session_start();
 		$_SESSION['sid']=session_id();
@@ -17,7 +13,7 @@
 		header('location: flower1.php?uname='.$uname.'') ;
 	}
 	else{
-		echo "<script> alert('You dont have Permission')</script>";
+		echo "<script> alert('You dont have Permission'); location.replace('register.html#tologin')</script>";
 	}
 ?>
 <?php

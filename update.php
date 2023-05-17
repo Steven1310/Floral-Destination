@@ -57,7 +57,7 @@ h4.title {
 					<select class="form-control" id="exampleSelect1" name="element1">
 					 <?php
 							include('connection.php');
-							$result=mysqli_query($conn,"SELECT * FROM details where status='ordered'");
+							$result=mysqli_query($conn,"SELECT * FROM details where status='ordered' or status='' ");
 							while($row=mysqli_fetch_array($result))
 								{
 								?>

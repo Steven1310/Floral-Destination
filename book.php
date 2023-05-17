@@ -8,13 +8,8 @@
 	$flower=$_POST["flower"];
 	include ('connection.php');
     
-	$test3=mysqli_query($conn,"SELECT * FROM product where flowername='$flower'");
-	while($row=mysqli_fetch_assoc($test3))
-	{
-		$cst = $row["price"];
-		
-	}	
-		
+	$row=mysqli_query($conn,"SELECT * FROM product where flowername='$flower'");
+  $cst = $row->fetch_row()["cost"];
 	$totcost= $cst * $quantity;
 	$random=mt_rand(0,10000);
 	$ordered='Ordered';
